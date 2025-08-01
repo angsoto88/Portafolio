@@ -1,2 +1,2 @@
 # Portafolio
-(assets/stress-laboral.jpg)
+(https://raw.githubusercontent.com/angsoto88/Portafolio/stress-laboral.jpg)
