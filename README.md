@@ -1,3 +1,3 @@
 # Portafolio
 
-[image](https://drive.google.com/file/d/1cnT4OONzEr7NJouAoDWSbg5kgQcRPt5m/view)
+<img src="https://drive.google.com/uc?1cnT4OONzEr7NJouAoDWSbg5kgQcRPt5m">
