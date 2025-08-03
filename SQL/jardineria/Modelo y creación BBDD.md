@@ -116,4 +116,4 @@ CREATE TABLE pago (
   FOREIGN KEY (codigo_cliente) REFERENCES cliente (codigo_cliente)
 ```
 
-[Consulta y descarga el script completo aquí: jardineria.sql](jardineria.sql)
+[Consulta y descarga el script completo aquí: jardineria.sql](jardineria.sql)  Incluye la inserción de datos a cada una de las tablas anteriormente creadas
