@@ -1,6 +1,10 @@
 Modelo entidad / relación
 
-imagen
+
+<p align="center">
+<img src="./jardineria.png" alt="Diagrama Entidad Relación" width="500"/>
+</p>
+
 
 Base de Datos para MySQL
 
