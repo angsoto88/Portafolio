@@ -5,3 +5,8 @@ imagen
 Base de Datos para MySQL
 
 
+```sql
+DROP DATABASE IF EXISTS jardineria;
+CREATE DATABASE jardineria CHARACTER SET utf8mb4;
+USE jardineria;
+```
