@@ -9,7 +9,7 @@ SELECT ciudad, telefono FROM oficina WHERE pais = 'España'
 ```
 3. Devuelve un listado con el nombre, apellidos y email de los empleados cuyo jefe tiene un código de jefe igual a 7.
 ```sql
-SELECT nombre, apellido, email FROM empleado WHERE codigo_jefe = '7'
+SELECT nombre, apellido1, email FROM empleado WHERE codigo_jefe = '7'
 ```
 4 .Devuelve el nombre del puesto, nombre, apellidos y email del jefe de la empresa.
 ```sql
@@ -25,15 +25,33 @@ SELECT nombre_cliente FROM cliente WHERE pais = 'Spain'
 ```
 7. Devuelve un listado con los distintos estados por los que puede pasar un pedido.
 ```sql
-SELECT DISTINT estado FROM pedido
+SELECT DISTINCT estado FROM pedido
 ```
 8. Devuelve un listado con el código de cliente de aquellos clientes que realizaron algún pago en 2008. Tenga en cuenta que deberá eliminar aquellos códigos de cliente que aparezcan repetidos. Resuelva la consulta:
-
-Utilizando la función YEAR de MySQL.
-Utilizando la función DATE_FORMAT de MySQL.
-Sin utilizar ninguna de las funciones anteriores.
-Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos que no han sido entregados a tiempo.
-
+8.1. Utilizando la función YEAR de MySQL.
+```sql
+SELECT DISTINCT codigo_cliente
+FROM jardineria.pago
+WHERE YEAR(fecha_pago) = 2008;
+```
+8.2. Utilizando la función DATE_FORMAT de MySQL.
+```sql
+SELECT DISTINCT codigo_cliente
+FROM jardineria.pago
+WHERE DATE_FORMAT(fecha_pago, '%Y') = '2008';
+```
+8.3. Sin utilizar ninguna de las funciones anteriores.
+```sql
+SELECT DISTINCT codigo_cliente
+FROM jardineria.pago
+WHERE fecha_pago BETWEEN '2008-01-01' AND '2008-12-31';
+```
+9. Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos que no han sido entregados a tiempo.
+```sql
+SELECT  codigo_pedido, codigo_cliente, fecha_esperada, fecha_entrega
+FROM pedidos
+WHERE fecha_entrega > fecha_esperada;
+```
 Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos cuya fecha de entrega ha sido al menos dos días antes de la fecha esperada.
 
 Utilizando la función ADDDATE de MySQL.
