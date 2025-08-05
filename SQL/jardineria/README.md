@@ -9,5 +9,5 @@ este fue trabajado en clases, en las cuales la idea es poder dar respuesta y rea
 Esta es el modelo entidad / relación que se trabajará en esta rama.
 
 <p align="center">
-<img src="./jardineria.png" alt="Diagrama Entidad Relación" width="500"/>
+<img src="./imagenes/jardineria.png" alt="Diagrama Entidad Relación" width="500"/>
 </p>

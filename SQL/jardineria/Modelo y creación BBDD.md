@@ -3,7 +3,7 @@
 Modelo entidad / relación
 
 <p align="center">
-<img src="./jardineria.png" alt="Diagrama Entidad Relación" width="500"/>
+<img src="./imagenes/jardineria.png" alt="Diagrama Entidad Relación" width="500"/>
 </p>
 
 
