@@ -1,4 +1,4 @@
-Consultas sobre una tabla
+## Consultas sobre una tabla
 1. Devuelve un listado con el código de oficina y la ciudad donde hay oficinas.
 ```sql
 SELECT codigo_oficina, ciudad FROM oficina
@@ -52,19 +52,59 @@ SELECT  codigo_pedido, codigo_cliente, fecha_esperada, fecha_entrega
 FROM pedidos
 WHERE fecha_entrega > fecha_esperada;
 ```
-Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos cuya fecha de entrega ha sido al menos dos días antes de la fecha esperada.
-
-Utilizando la función ADDDATE de MySQL.
-Utilizando la función DATEDIFF de MySQL.
-¿Sería posible resolver esta consulta utilizando el operador de suma + o resta -?
-Devuelve un listado de todos los pedidos que fueron rechazados en 2009.
-
-Devuelve un listado de todos los pedidos que han sido entregados en el mes de enero de cualquier año.
-
-Devuelve un listado con todos los pagos que se realizaron en el año 2008 mediante Paypal. Ordene el resultado de mayor a menor.
-
-Devuelve un listado con todas las formas de pago que aparecen en la tabla pago. Tenga en cuenta que no deben aparecer formas de pago repetidas.
-
-Devuelve un listado con todos los productos que pertenecen a la gama Ornamentales y que tienen más de 100 unidades en stock. El listado deberá estar ordenado por su precio de venta, mostrando en primer lugar los de mayor precio.
-
-Devuelve un listado con todos los clientes que sean de la ciudad de Madrid y cuyo representante de ventas tenga el código de empleado 11 o 30.
+10. Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos cuya fecha de entrega ha sido al menos dos días antes de la fecha esperada.
+10.1. Utilizando la función ADDDATE de MySQL.
+```sql
+SELECT codigo_pedido, codigo_cliente, fecha_esperada, fecha_entrega
+FROM jardineria.pedido
+WHERE fecha_entrega <= ADDDATE(fecha_esperada, INTERVAL -2 DAY);
+```
+10.2. Utilizando la función DATEDIFF de MySQL.
+```sql
+SELECT codigo_pedido, codigo_cliente, fecha_esperada, fecha_entrega
+FROM jardineria.pedido
+WHERE DATEDIFF(fecha_esperada, fecha_entrega) >= 2;
+```
+10.3 ¿Sería posible resolver esta consulta utilizando el operador de suma + o resta -?
+```sql
+SELECT codigo_pedido, codigo_cliente, fecha_esperada, fecha_entrega
+FROM jardineria.pedido
+WHERE fecha_entrega <= fecha_esperada - INTERVAL 2 DAY;
+```
+11. Devuelve un listado de todos los pedidos que fueron rechazados en 2009.
+```sql
+SELECT codigo_pedido, codigo_cliente, fecha_pedido, estado
+FROM pedido
+WHERE estado = 'Rechazado' AND YEAR(fecha_pedido) = 2009;
+```
+12. Devuelve un listado de todos los pedidos que han sido entregados en el mes de enero de cualquier año.
+```sql
+SELECT codigo_pedido, codigo_cliente, fecha_pedido, estado
+FROM pedido 
+WHERE estado = 'Entregado' AND MONTH(fecha_pedido) = 1;
+```
+13. Devuelve un listado con todos los pagos que se realizaron en el año 2008 mediante Paypal. Ordene el resultado de mayor a menor.
+```sql
+SELECT id_transaccion, fecha_pago, forma_pago, total
+FROM pago
+WHERE forma_pago = 'Paypal' AND YEAR(fecha_pago) = 2008
+ORDER BY total DESC;
+```
+14. Devuelve un listado con todas las formas de pago que aparecen en la tabla pago. Tenga en cuenta que no deben aparecer formas de pago repetidas.
+```sql
+SELECT DISTINCT forma_pago
+FROM pago;
+```
+15. Devuelve un listado con todos los productos que pertenecen a la gama Ornamentales y que tienen más de 100 unidades en stock. El listado deberá estar ordenado por su precio de venta, mostrando en primer lugar los de mayor precio.
+```sql
+SELECT codigo_producto, nombre, gama, precio_venta, cantidad_en_stock
+FROM jardineria. producto
+WHERE gama = 'Ornamentales' AND cantidad_en_stock > 100
+ORDER BY precio_venta DESC;
+```
+16. Devuelve un listado con todos los clientes que sean de la ciudad de Madrid y cuyo representante de ventas tenga el código de empleado 11 o 30.
+```sql
+SELECT codigo_cliente, nombre_cliente, ciudad, codigo_empleado_rep_ventas
+FROM jardineria.cliente
+WHERE ciudad = 'Madrid' AND codigo_empleado_rep_ventas IN (11, 30);
+```
