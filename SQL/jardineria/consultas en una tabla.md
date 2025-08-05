@@ -1,4 +1,33 @@
 ## Consultas sobre una tabla
+___
+Este archivo contiene una serie de consultas SQL ejecutadas sobre una tabla única, diseñadas para demostrar el uso progresivo de distintos comandos, funciones y operadores del lenguaje SQL. Las consultas se reparten entre menor a mayor complejidad de manera indistinta, y sirven como una guía práctica para comprender cómo se puede extraer, transformar y analizar información desde una fuente única de datos.
+
+Consultas Basicas:
+Estas son sentencias simples que acceden directamente a los datos sin operaciones adicionales:
+- Listar valores únicos de una columna con SELECT DISTINCT.
+- Filtrar registros mediante WHERE, por ejemplo: formas de pago específicas, ciudad de origen, estado del pedido.
+- Ordenar resultados usando ORDER BY, ya sea ascendente o descendente.
+
+Consultas intermedias:
+Estas incluyen condiciones más refinadas y funciones integradas:
+- Uso de funciones como YEAR(), MONTH(), DATE_FORMAT() para filtrar por año o mes.
+- Comparaciones entre columnas, como fechas esperadas versus fechas de entrega (fecha_entrega > fecha_esperada).
+- Aplicación de BETWEEN, operadores lógicos AND, OR, o LIKE para búsquedas más específicas.
+
+Consultas avanzadas:
+Este nivel explora transformaciones más profundas y lógica más compleja:
+- Empleo de funciones agregadas como COUNT() junto a GROUP BY y HAVING para agrupar datos y filtrar grupos según criterios numéricos.
+- Comparación de fechas con ADDDATE(), DATEDIFF() o incluso operadores aritméticos para encontrar anticipos o retrasos.
+- Aplicación de filtros que involucran deduplicación y refinamiento de resultados.
+
+Aplicación práctica:
+Cada consulta representa un escenario útil:
+- Seguimiento de pedidos entregados o retrasados.
+- Identificación de clientes según ubicación y actividad.
+- Análisis de ventas, pagos por métodos específicos y disponibilidad de productos según stock y gama.
+
+### Ejercicios
+
 1. Devuelve un listado con el código de oficina y la ciudad donde hay oficinas.
 ```sql
 SELECT codigo_oficina, ciudad FROM oficina
