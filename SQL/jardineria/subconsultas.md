@@ -1,6 +1,6 @@
 # 🧠 Subconsultas SQL en el Modelo de Jardinería
 
-Este documento forma parte del portafolio técnico de Angel y presenta una colección de ejercicios resueltos utilizando **subconsultas SQL** aplicadas al modelo relacional de una empresa de jardinería. El objetivo es demostrar el dominio de técnicas avanzadas de consulta en bases de datos relacionales, utilizando subconsultas en diferentes contextos y operadores.
+Este documento presenta una variedad de ejercicios resueltos utilizando **subconsultas SQL** aplicadas al modelo relacional ya mencionado. El objetivo es demostrar el dominio de técnicas avanzadas de consulta en bases de datos relacionales, utilizando subconsultas en diferentes contextos y operadores.
 
 ## 📘 ¿Qué contiene este archivo?
 
@@ -11,7 +11,7 @@ El archivo está organizado en secciones que agrupan las subconsultas según el 
 - **Operadores IN y NOT IN**
 - **Cláusulas EXISTS y NOT EXISTS**
 
-Cada consulta está numerada y explicada mediante su código SQL, permitiendo su ejecución directa en entornos compatibles con MySQL o PostgreSQL.
+Cada consulta está numerada y explicada mediante su código SQL y resultados visuales, permitiendo su ejecución directa en entornos compatibles con MySQL o PostgreSQL.
 
 ## 🧩 Contexto del modelo
 
