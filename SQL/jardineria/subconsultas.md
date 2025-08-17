@@ -59,7 +59,7 @@ WHERE precio_venta = (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 2.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 2.png" alt="subconsulta " width="200"/>
   
 3. Devuelve el nombre del producto del que se han vendido más unidades. (Tenga en cuenta que tendrá que calcular cuál es el número total de unidades que se han vendido de cada producto a partir de los datos de la tabla detalle_pedido)
 ```sql
@@ -74,7 +74,7 @@ WHERE codigo_producto = (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 3.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 3.png" alt="subconsulta " width="200"/>
   
 4. Los clientes cuyo límite de crédito sea mayor que los pagos que haya realizado. (Sin utilizar INNER JOIN).
 ```sql
@@ -87,7 +87,7 @@ WHERE limite_credito > (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 4.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 4.png" alt="subconsulta " width="200"/>
   
 5. Devuelve el producto que más unidades tiene en stock.
 ```sql
@@ -99,7 +99,7 @@ WHERE cantidad_en_stock = (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 5.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 5.png" alt="subconsulta " width="200"/>
   
 6. Devuelve el producto que menos unidades tiene en stock.
 ```sql
@@ -111,7 +111,7 @@ WHERE cantidad_en_stock = (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 6.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 6.png" alt="subconsulta " width="200"/>
   
 7. Devuelve el nombre, los apellidos y el email de los empleados que están a cargo de Alberto Soria.
 ```sql
@@ -137,7 +137,7 @@ WHERE limite_credito >= ALL (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 8.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 8.png" alt="subconsulta " width="200"/>
   
 9. Devuelve el nombre del producto que tenga el precio de venta más caro.
 ```sql
@@ -149,7 +149,7 @@ WHERE precio_venta >= ALL (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 9.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 9.png" alt="subconsulta " width="200"/>
   
 10. Devuelve el producto que menos unidades tiene en stock.
 ```sql
@@ -161,7 +161,7 @@ WHERE cantidad_en_stock <= ALL (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 10.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 10.png" alt="subconsulta " width="200"/>
   
 ## Subconsultas con IN y NOT IN
 11. Devuelve el nombre, apellido1 y cargo de los empleados que no representen a ningún cliente.
@@ -187,7 +187,7 @@ WHERE codigo_cliente NOT IN (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 12.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 12.png" alt="subconsulta " width="200"/>
   
 13. Devuelve un listado que muestre solamente los clientes que sí han realizado algún pago.
 ```sql
@@ -199,7 +199,7 @@ WHERE codigo_cliente IN (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 13.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 13.png" alt="subconsulta " width="200"/>
   
 14. Devuelve un listado de los productos que nunca han aparecido en un pedido.
 ```sql
@@ -241,7 +241,7 @@ WHERE codigo_oficina NOT IN (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 16.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 16.png" alt="subconsulta " width="200"/>
   
 17. Devuelve un listado con los clientes que han realizado algún pedido pero no han realizado ningún pago.
 ```sql
@@ -257,7 +257,7 @@ AND codigo_cliente NOT IN (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 17.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 17.png" alt="subconsulta " width="200"/>
   
 ## Subconsultas con EXISTS y NOT EXISTS
 18. Devuelve un listado que muestre solamente los clientes que no han realizado ningún pago.
@@ -271,7 +271,7 @@ WHERE NOT EXISTS (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 18.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 18.png" alt="subconsulta " width="200"/>
   
 19. Devuelve un listado que muestre solamente los clientes que sí han realizado algún pago.
 ```sql
@@ -284,7 +284,7 @@ WHERE EXISTS (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 19.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 19.png" alt="subconsulta " width="200"/>
   
 20. Devuelve un listado de los productos que nunca han aparecido en un pedido.
 ```sql
@@ -310,5 +310,5 @@ WHERE EXISTS (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 21.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 21.png" alt="subconsulta " width="200"/>
   
