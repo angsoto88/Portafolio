@@ -47,7 +47,7 @@ WHERE limite_credito = (
 );
 ```
 <p align="center">
-<img src="./imagenes/subconsulta 1.png" alt="subconsulta " width="300"/>
+<img src="./imagenes/subconsulta 1.png" alt="subconsulta " width="200"/>
 
 2. Devuelve el nombre del producto que tenga el precio de venta más caro.
 ```sql
