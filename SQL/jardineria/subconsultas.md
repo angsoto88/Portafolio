@@ -1,3 +1,41 @@
+# 🧠 Subconsultas SQL en el Modelo de Jardinería
+
+Este documento forma parte del portafolio técnico de Angel y presenta una colección de ejercicios resueltos utilizando **subconsultas SQL** aplicadas al modelo relacional de una empresa de jardinería. El objetivo es demostrar el dominio de técnicas avanzadas de consulta en bases de datos relacionales, utilizando subconsultas en diferentes contextos y operadores.
+
+## 📘 ¿Qué contiene este archivo?
+
+El archivo está organizado en secciones que agrupan las subconsultas según el tipo de operador o cláusula utilizada:
+
+- **Operadores básicos de comparación** (`=`, `>`, `<`, etc.)
+- **Operadores ALL y ANY**
+- **Operadores IN y NOT IN**
+- **Cláusulas EXISTS y NOT EXISTS**
+
+Cada consulta está numerada y explicada mediante su código SQL, permitiendo su ejecución directa en entornos compatibles con MySQL o PostgreSQL.
+
+## 🧩 Contexto del modelo
+
+Las consultas se basan en el modelo relacional de la base de datos **Jardinería**, que incluye las siguientes entidades:
+
+- `cliente`: información de clientes, incluyendo su representante de ventas.
+- `empleado`: datos de empleados, jefes y oficinas.
+- `oficina`: ubicación y contacto de las oficinas.
+- `pago`: transacciones realizadas por los clientes.
+- `pedido` y `detalle_pedido`: pedidos realizados y sus productos.
+- `producto` y `gama_producto`: catálogo de productos y sus gamas.
+
+Este modelo permite realizar análisis complejos sobre ventas, pagos, jerarquías internas, y comportamiento de clientes.
+
+## 🎯 Propósito del ejercicio
+
+El propósito de este archivo es:
+
+- Aplicar subconsultas en escenarios reales de negocio.
+- Explorar distintas formas de filtrar, comparar y correlacionar datos.
+- Preparar material técnico para documentación, evaluación y visualización en Power BI.
+- Consolidar buenas prácticas en SQL para portafolios profesionales.
+
+
 ## Con operadores básicos de comparación
 1. Devuelve el nombre del cliente con mayor límite de crédito.
 ```sql
