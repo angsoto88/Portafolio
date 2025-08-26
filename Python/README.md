@@ -42,6 +42,10 @@ Aplicar técnicas básicas de análisis y visualización de datos para:
 Puedes abrir el notebook directamente en Google Colab con el siguiente botón:  
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17dJM-p9yLXAKC7eizRXprayu_rkOX8e6?usp=sharing)
+o
+[![Abrir en github](Python/data/icons8-github.gif)](https://github.com/angsoto88/Portafolio/blob/main/Python/Ventas_BMW_2010_2024.ipynb)
+
+https://github.com/angsoto88/Portafolio/blob/main/Python/Ventas_BMW_2010_2024.ipynb
 
 
 ---
