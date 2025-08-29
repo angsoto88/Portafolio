@@ -1,6 +1,6 @@
 # 🚗 Análisis de Ventas BMW (2010 - 2024)
 
-Este proyecto corresponde a un **ejercicio práctico de fundamentos de análisis de datos**, desarrollado en **Google Colab** y basado en un dataset ficticio de ventas históricas de BMW.  
+Este proyecto presenta un análisis exploratorio y visual de un dataset ficticio de ventas históricas de BMW, abarcando el periodo 2010–2024. El objetivo es identificar patrones de comportamiento, tendencias de mercado y oportunidades estratégicas a partir de datos estructurados.
 
 ---
 
@@ -14,9 +14,10 @@ Aplicar técnicas básicas de análisis y visualización de datos para:
 ---
 
 ## 🛠️ Tecnologías empleadas
-- **Python** (pandas, numpy, matplotlib, seaborn)
-- **Google Colab** (entorno de desarrollo)
-- **GitHub** (repositorio y control de versiones)
+- Python: pandas, numpy para manipulación y análisis de datos.
+- Visualización: matplotlib, seaborn, plotly para gráficos estáticos e interactivos.
+- Entorno: Google Colab para desarrollo y ejecución.
+- Control de versiones: GitHub para almacenamiento y seguimiento de cambios.
 
 ---
 
