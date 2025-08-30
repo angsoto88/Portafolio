@@ -38,11 +38,6 @@ Visualización geográfica de ventas y productos vendidos por ubicación.
 
 ---
 
-### 📅 Tendencias Mensuales
-![Tendencias](images/tendencias_mensuales.png)  
-Evolución de ventas y márgenes a lo largo del tiempo.
-
----
 
 ## 📂 Archivos del repositorio
 
