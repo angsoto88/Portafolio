@@ -16,7 +16,7 @@ Este proyecto presenta un dashboard interactivo desarrollado en Power BI, basado
 ## 📊 Vistas principales del dashboard
 
 ### 📌 Portada y KPIs
-![Portada](images/portada.png)  
+![Portada](imagenes/portada.png)  
 Resumen con indicadores clave:
 - N° Ventas: 4.185  
 - Ingresos: $14.532.768.680  
@@ -27,13 +27,13 @@ Resumen con indicadores clave:
 ---
 
 ### 🛒 Ventas por Categoría
-![Ventas por Categoría](images/ventas_por_categoria.png)  
+![Ventas por Categoría](imagenes/ventas_por_categoria.png)  
 Gráfico combinado que muestra el volumen de ventas y el porcentaje de margen por categoría de producto.
 
 ---
 
 ### 🌍 Mapa Regional
-![Mapa Regional](images/mapa_regional.png)  
+![Mapa Regional](imagenes/mapa_regional.png)  
 Visualización geográfica de ventas y productos vendidos por ubicación.
 
 ---
@@ -76,9 +76,3 @@ Evolución de ventas y márgenes a lo largo del tiempo.
 - Power Query  
 - DAX  
 - Excel
-
----
-
-## 📬 Contacto
-
-[GitHub](https://github.com/angsoto88)
