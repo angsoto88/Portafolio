@@ -1,14 +1,15 @@
 # 🖥️ Dashboard de Ventas – PC Store
 
-Este proyecto presenta un **dashboard interactivo en Power BI** basado en el dataset `datos_pc-store.xlsx`, que contiene información de ventas, productos, categorías y regiones. El análisis permite identificar patrones de consumo, rendimiento por categoría y oportunidades de mejora.
+Este proyecto presenta un dashboard interactivo desarrollado en Power BI, basado en el archivo `datos_pc-store.xlsx`. El objetivo es analizar el rendimiento comercial de una tienda de tecnología, identificando patrones de consumo, rentabilidad por categoría y oportunidades de mejora.
 
 ---
 
 ## 🎯 Objetivos del proyecto
-- Analizar el volumen de ventas por región, categoría y producto.
-- Evaluar la rentabilidad por línea de productos.
+
+- Visualizar métricas clave de ventas, ingresos y margen.
+- Analizar el comportamiento por región, categoría y producto.
 - Detectar tendencias temporales y variaciones estacionales.
-- Ofrecer una herramienta visual para la toma de decisiones estratégicas.
+- Facilitar la toma de decisiones estratégicas basadas en datos.
 
 ---
 
@@ -16,53 +17,68 @@ Este proyecto presenta un **dashboard interactivo en Power BI** basado en el dat
 
 ### 📌 Portada y KPIs
 ![Portada](images/portada.png)  
-Resumen con métricas clave como **Ventas Totales**, **Cantidad de Pedidos** y **Margen de Ganancia**.
+Resumen con indicadores clave:
+- N° Ventas: 4.185  
+- Ingresos: $14.532.768.680  
+- Venta Promedio: $3.472.585  
+- Productos Vendidos: 13.946  
+- % Margen: 20,77 %
 
 ---
 
-### 🛒 Análisis por Categoría de Producto
+### 🛒 Ventas por Categoría
 ![Ventas por Categoría](images/ventas_por_categoria.png)  
-Visualización que muestra qué categorías impulsan la mayor parte de las ventas.
+Gráfico combinado que muestra el volumen de ventas y el porcentaje de margen por categoría de producto.
 
 ---
 
-### 🌍 Análisis Geográfico
-![Ventas por Región](images/ventas_por_region.png)  
-Mapa interactivo con desglose de ventas y ganancias por región.
+### 🌍 Mapa Regional
+![Mapa Regional](images/mapa_regional.png)  
+Visualización geográfica de ventas y productos vendidos por ubicación.
 
 ---
 
 ### 📅 Tendencias Mensuales
 ![Tendencias](images/tendencias_mensuales.png)  
-Evolución de ventas y ganancias a lo largo del tiempo, detectando picos y caídas.
+Evolución de ventas y márgenes a lo largo del tiempo.
 
 ---
 
-## 📂 Archivos en el repositorio
+## 📂 Archivos del repositorio
+
+- `/pbix/dashboard_pc-store.pbix`: Archivo principal de Power BI.
 - `/data/datos_pc-store.xlsx`: Dataset utilizado.
-- `/pbix/dashboard_pc-store.pbix`: Archivo para abrir en Power BI.
-- `/images/`: Capturas de pantalla del dashboard.
-- `/docs/diccionario_datos.md`: Descripción de cada columna del dataset.
+- `/images/`: Capturas del dashboard.
+- `/docs/medidas_dax.md`: Documentación de fórmulas DAX.
+- `/docs/diccionario_datos.md`: Descripción de columnas del dataset.
 
 ---
 
 ## 🚀 Cómo usarlo
-1. Descarga el archivo `.pbix` desde `/pbix/`.
-2. Ábrelo en **Power BI Desktop**.
-3. Explora las diferentes pestañas y filtros interactivos.
+
+1. Descarga el archivo `.pbix` desde la carpeta `/pbix/`.
+2. Ábrelo en Power BI Desktop.
+3. Explora las distintas páginas y filtros interactivos.
 
 ---
 
-## 🔍 Principales hallazgos
-- La **categoría X** representa el mayor volumen de ingresos.
-- La región **Y** tiene un gran potencial de crecimiento.
-- Las ventas presentan estacionalidad marcada en el mes de **Z**.
+## 🧠 Hallazgos clave
+
+- Las categorías con mayor volumen no siempre tienen el mejor margen.
+- Las regiones urbanas concentran la mayoría de las ventas.
+- El margen promedio se mantiene por debajo del 25%, lo que sugiere oportunidades de optimización.
 
 ---
 
 ## 📌 Tecnologías utilizadas
-- Power BI Desktop
-- Power Query
-- DAX
+
+- Power BI Desktop  
+- Power Query  
+- DAX  
 - Excel
 
+---
+
+## 📬 Contacto
+
+[GitHub](https://github.com/angsoto88)
