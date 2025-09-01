@@ -57,8 +57,3 @@ Este trabajo está diseñado como un **caso práctico de curso de fundamentos de
 - Familiarizarse con datasets estructurados.
 - Aplicar métodos básicos de análisis exploratorio.
 - Interpretar resultados en un contexto de negocio.
-
----
-
-## 📌 Autor
-Proyecto desarrollado por *[Tu nombre o usuario]* como material formativo.
