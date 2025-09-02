@@ -40,7 +40,7 @@ Aplicar técnicas básicas de análisis y visualización de datos para:
 ---
 
 ## ▶️ Cómo ejecutar
-Puedes abrir el notebook directamente en Google Colab o en aca en Github con respectivo botón:  
+Puedes abrir el notebook directamente en Google Colab o en Github con respectivo botón:  
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17dJM-p9yLXAKC7eizRXprayu_rkOX8e6?usp=sharing)
 
