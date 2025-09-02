@@ -1,4 +1,4 @@
-# 🧠 Introducción al Trabajo con SQL y MySQL Workbench
+# 🧠 SQL y MySQL Workbench
 
 Esta carpeta reúne una serie de ejercicios, prácticas y ejemplos desarrollados en lenguaje **SQL (Structured Query Language)**, el estándar universal para la gestión y consulta de bases de datos relacionales. Aquí se exploran distintas técnicas para extraer, transformar y analizar datos, desde operaciones básicas hasta consultas complejas que involucran múltiples tablas, subconsultas y funciones agregadas.
 
